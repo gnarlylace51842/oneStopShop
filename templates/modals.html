@@ -1,0 +1,107 @@
+<div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="/register" method="post">
+                <div style="flex: 1; min-width: 200px;">
+                    <label for="username">Enter your email:</label>
+                    <input type="text" id="email" name="email" style="width: 100%;">
+                    <label for="password">Enter your password:</label>
+                    <input type="password" id="password" name="password" style="width: 100%;">
+                    <label for="contact">Enter your contact:</label>
+                    <input type="text" id="contact" name="contact" style="width: 100%;">
+                    <label for="shopname">Enter your Shop name:</label>
+                    <input type="text" id="shopname" name="shopname" style="width: 100%;">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="name" name="name" style="width: 100%;">
+                    <label for="imglink">Enter your Main store page IMG:</label>
+                    <input type="text" id="imglink" name="imglink" style="width: 100%;">
+                </div>
+                <div style="flex-basis: 100%; text-align: center; margin-top: 10px;">
+                    <button type="submit" class="btn btn-primary">Submit!</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" id="RegisterCustomerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form action="/registerCustomer" method="post">
+              <div style="flex: 1; min-width: 200px;">
+                  <label for="username">Enter your email:</label>
+                  <input type="text" id="email" name="email" style="width: 100%;">
+                  <label for="password">Enter your password:</label>
+                  <input type="password" id="password" name="password" style="width: 100%;">
+                  <label for="contact">Enter your contact:</label>
+                  <input type="text" id="contact" name="contact" style="width: 100%;">
+                  <label for="name">Enter your name:</label>
+                  <input type="text" id="name" name="name" style="width: 100%;">
+              </div>
+              <div style="flex-basis: 100%; text-align: center; margin-top: 10px;">
+                  <button type="submit" class="btn btn-primary">Submit!</button>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form action="/login" method="post" style="display: flex; flex-wrap: wrap;">
+              <div style="flex: 1; min-width: 200px;">
+                  <label for="username">Enter your name:</label>
+                  <input type="text" id="name" name="name" style="width: 100%;">
+                  <label for="password">Enter your password:</label>
+                  <input type="password" id="password" name="password" style="width: 100%;">
+              </div>
+              <div style="flex-basis: 100%; text-align: center; margin-top: 10px;">
+                  <button type="submit" class="btn btn-primary">Submit!</button>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="LogInCustomerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form action="/loginCustomer" method="post" style="display: flex; flex-wrap: wrap;">
+              <div style="flex: 1; min-width: 200px;">
+                  <label for="username">Enter your name:</label>
+                  <input type="text" id="name" name="name" style="width: 100%;">
+                  <label for="password">Enter your password:</label>
+                  <input type="password" id="password" name="password" style="width: 100%;">
+              </div>
+              <div style="flex-basis: 100%; text-align: center; margin-top: 10px;">
+                  <button type="submit" class="btn btn-primary">Submit!</button>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
