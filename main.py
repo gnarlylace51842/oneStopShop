@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, request, session, flash, url_for
 from bson.objectid import ObjectId
+import os
 import time
 import random
 from pymongo.mongo_client import MongoClient
@@ -9,7 +10,7 @@ app = Flask(__name__)
 app.secret_key = "pwjrfpinveo"
 bcrypt = Bcrypt(app)
 
-uri = "mongodb+srv://dylanashraf56014:yqoHsZ36iqTGN7xn@cluster0.iigar.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = os.getenv("mongo_url")
 client = MongoClient(uri)
 
 db = client.oneStopShop
